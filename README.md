@@ -112,12 +112,18 @@ Contributions are welcome! Please fork the repository and submit a Pull Request.
 ## 👥 Authors
 
 *   **Hubert Homaei** - *Initial work & Lead Developer*
+    *   📧 Email: [homaei@ieee.org](mailto:homaei@ieee.org)
     *   [GitHub Profile](https://github.com/Homaei)
     *   Extremadura University, Caceres, Spain 🇪🇸
 
 *   **Iman Khazrak** - *Contributor & Researcher*
+    *   📧 Email: [ikhazra@bgsu.edu](mailto:ikhazra@bgsu.edu)
     *   [GitHub Profile](https://github.com/imankhazrak)
     *   Bowling Green State University, Toledo, OH, USA 🇺🇸
+
+## 🙏 Acknowledgments
+
+*   **Special Thanks to Ambling Ingeniería y Servicios, S.L.** for their support and contribution to this project.
 
 ## 📄 License
 
