@@ -1,0 +1,36 @@
+version: '3.8'
+
+services:
+  water-leak-analyzer:
+    build: .
+    container_name: water_leak_analyzer
+    restart: unless-stopped
+    environment:
+      - DB_HOST=YOUR_DB_HOST
+      - DB_PORT=5432
+      - DB_NAME=YOUR_DB_NAME
+      - DB_USER=YOUR_DB_USER
+      - DB_PASSWORD=YOUR_DB_PASSWORD
+      - DB_TABLE_NAME=uplinks
+      - SCHEDULE_MODE=true
+    volumes:
+      - ./nightly_reports:/app/nightly_reports
+
+  water-leak-api:
+    build: .
+    container_name: water_leak_api
+    restart: unless-stopped
+    command: uvicorn api:app --host 0.0.0.0 --port 8000
+    ports:
+      - "8005:8000"
+    environment:
+      - DB_HOST=YOUR_DB_HOST
+      - DB_PORT=5432
+      - DB_NAME=YOUR_DB_NAME
+      - DB_USER=YOUR_DB_USER
+      - DB_PASSWORD=YOUR_DB_PASSWORD
+      - DB_TABLE_NAME=uplinks
+      - API_TOKEN=YOUR_SECURE_API_TOKEN
+    # networks:
+    #   app_network:
+    #     driver: bridge
