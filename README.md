@@ -109,6 +109,16 @@ Contributions are welcome! Please fork the repository and submit a Pull Request.
 4.  Push to the Branch (`git push origin feature/AmazingFeature`)
 5.  Open a Pull Request
 
+## 👥 Authors
+
+*   **Hubert Homaei** - *Initial work & Lead Developer*
+    *   [GitHub Profile](https://github.com/Homaei)
+    *   Extremadura University, Caceres, Spain 🇪🇸
+
+*   **Iman Khazrak** - *Contributor & Researcher*
+    *   [GitHub Profile](https://github.com/imankhazrak)
+    *   Bowling Green State University, Toledo, OH, USA 🇺🇸
+
 ## 📄 License
 
 Distributed under the MIT License. See `LICENSE` for more information.
